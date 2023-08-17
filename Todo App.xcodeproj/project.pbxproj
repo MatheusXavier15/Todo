@@ -14,6 +14,11 @@
 		0685A6842A8C5E50001A0018 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0685A6832A8C5E50001A0018 /* Persistence.swift */; };
 		0685A6872A8C5E50001A0018 /* Todo_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0685A6852A8C5E50001A0018 /* Todo_App.xcdatamodeld */; };
 		0685A68F2A8C5ED9001A0018 /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0685A68E2A8C5ED9001A0018 /* AddTodoView.swift */; };
+		0685A6922A8C7858001A0018 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0685A6912A8C7858001A0018 /* Launch Screen.storyboard */; };
+		0685A6942A8C7B67001A0018 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0685A6932A8C7B67001A0018 /* EmptyListView.swift */; };
+		0691CB1E2A8DA509006DEDB9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0691CB1D2A8DA509006DEDB9 /* SettingsView.swift */; };
+		0691CB202A8DA914006DEDB9 /* FormRowStaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0691CB1F2A8DA914006DEDB9 /* FormRowStaticView.swift */; };
+		0691CB222A8DB5AB006DEDB9 /* FormRowLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0691CB212A8DB5AB006DEDB9 /* FormRowLinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,12 @@
 		0685A6832A8C5E50001A0018 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0685A6862A8C5E50001A0018 /* Todo_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todo_App.xcdatamodel; sourceTree = "<group>"; };
 		0685A68E2A8C5ED9001A0018 /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
+		0685A6902A8C7794001A0018 /* Todo-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Todo-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0685A6912A8C7858001A0018 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		0685A6932A8C7B67001A0018 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
+		0691CB1D2A8DA509006DEDB9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0691CB1F2A8DA914006DEDB9 /* FormRowStaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowStaticView.swift; sourceTree = "<group>"; };
+		0691CB212A8DB5AB006DEDB9 /* FormRowLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowLinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +68,12 @@
 		0685A6792A8C5E4E001A0018 /* Todo App */ = {
 			isa = PBXGroup;
 			children = (
+				0685A6902A8C7794001A0018 /* Todo-App-Info.plist */,
 				0685A68D2A8C5EBF001A0018 /* View */,
 				0685A67A2A8C5E4E001A0018 /* Todo_AppApp.swift */,
-				0685A67C2A8C5E4E001A0018 /* ContentView.swift */,
 				0685A67E2A8C5E50001A0018 /* Assets.xcassets */,
 				0685A6832A8C5E50001A0018 /* Persistence.swift */,
+				0685A6912A8C7858001A0018 /* Launch Screen.storyboard */,
 				0685A6852A8C5E50001A0018 /* Todo_App.xcdatamodeld */,
 				0685A6802A8C5E50001A0018 /* Preview Content */,
 			);
@@ -79,7 +91,12 @@
 		0685A68D2A8C5EBF001A0018 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0685A67C2A8C5E4E001A0018 /* ContentView.swift */,
+				0691CB1D2A8DA509006DEDB9 /* SettingsView.swift */,
+				0691CB1F2A8DA914006DEDB9 /* FormRowStaticView.swift */,
+				0685A6932A8C7B67001A0018 /* EmptyListView.swift */,
 				0685A68E2A8C5ED9001A0018 /* AddTodoView.swift */,
+				0691CB212A8DB5AB006DEDB9 /* FormRowLinkView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0685A6922A8C7858001A0018 /* Launch Screen.storyboard in Resources */,
 				0685A6822A8C5E50001A0018 /* Preview Assets.xcassets in Resources */,
 				0685A67F2A8C5E50001A0018 /* Assets.xcassets in Resources */,
 			);
@@ -154,8 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0691CB1E2A8DA509006DEDB9 /* SettingsView.swift in Sources */,
+				0691CB202A8DA914006DEDB9 /* FormRowStaticView.swift in Sources */,
+				0691CB222A8DB5AB006DEDB9 /* FormRowLinkView.swift in Sources */,
 				0685A6842A8C5E50001A0018 /* Persistence.swift in Sources */,
 				0685A67D2A8C5E4E001A0018 /* ContentView.swift in Sources */,
+				0685A6942A8C7B67001A0018 /* EmptyListView.swift in Sources */,
 				0685A67B2A8C5E4E001A0018 /* Todo_AppApp.swift in Sources */,
 				0685A6872A8C5E50001A0018 /* Todo_App.xcdatamodeld in Sources */,
 				0685A68F2A8C5ED9001A0018 /* AddTodoView.swift in Sources */,
@@ -290,11 +312,11 @@
 				DEVELOPMENT_TEAM = TV2M6PV3A8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Todo-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,11 +341,11 @@
 				DEVELOPMENT_TEAM = TV2M6PV3A8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Todo-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
